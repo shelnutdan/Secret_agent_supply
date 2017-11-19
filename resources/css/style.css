@@ -65,7 +65,7 @@ li {
 }
 }
 .product{
-  border: 4px solid black;
+
   width: 30%;
 
 }
@@ -73,12 +73,48 @@ li {
   border: 4px solid black;
   padding:2rem 0;
   height:9rem;
-
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .description{
   display:block;
   background-color: black;
   color:white;
   text-align:center;
-  padding:0.5 rem;
+  padding:0.5rem;
+}
+.info {
+  width:35%;
+}
+.info .title{
+  display:block;
+  background-color:black;
+  color:white;
+  padding: 1rem 2rem;
+}
+footer{
+  background-color: black;
+  color:white;
+  padding: 5rem 0;
+  margin-top: 4rem;
+}
+@media only screen and (max-width:1024px)
+{
+  body{
+  font-size:16px;
+}
+  nav ul {
+  display:none;
+}
+  .mobile-nav{
+    display:block;
+    text-align:center;
+  }
+  .product{
+    width:47%;
+  }
+  .info{
+    width:35%;
+  }
 }
